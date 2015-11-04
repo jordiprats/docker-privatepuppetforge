@@ -31,4 +31,6 @@ RUN mkdir -p /var/forge/modules
 
 VOLUME ["/var/forge/modules"]
 
+EXPOSE 8080
+
 CMD /usr/local/bin/puppet-forge-server -m /var/forge/modules -x http://forge.puppetlabs.com
